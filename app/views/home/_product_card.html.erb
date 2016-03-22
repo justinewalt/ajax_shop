@@ -1,0 +1,20 @@
+<div class='card-columns'>
+	<div class="col-sm-6">
+	  <div class="card card-block card-inverse card-primary text-xs-center">
+	    <h4 class="card-title"><%= @product[:name] %></h4>
+	    <p class="card-text">
+	    	<ul>
+	    		<li class='base_price'>$<%= @product[:base_price] %></li>
+	    		<li class='description'><%= @product[:description] %></li>
+	    		<li class='quantity_on_hand'><%= @product[:quantity_on_hand] %></li>
+	    		<li class='color'><%= @product[:color] %></li>
+	    		<li class='weight'><%= @product[:weight] %></li>
+	    		<li class='other_attributes'><%= @product[:other_attributes] %></li>
+	    	</ul>
+	    </p>
+	    <a href='<%= @product[:id] %>' class="btn btn-primary show_product">Inspect </a>
+	    <a href='<%= @product[:id] %>' class='btn btn-primary delete_product'>Delete </a>
+	    <a href='#' data-product-id=<%= @product[:id] %> class='btn btn-primary edit_product'> Edit </a>
+	  </div>
+	</div>
+</div>
